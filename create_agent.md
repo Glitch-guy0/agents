@@ -15,8 +15,8 @@ To generate a new Specialised Agent, a user or core agent invokes this file with
 
 Upon invocation, the system must first enter an interactive generation protocol, asking targeted clarifying questions to refine the domain persona before generating the output.
 
-### Interactive Generation Protocol
-Before generating the agent template, ask the user clarifying questions adapted to the requested domain:
+## Interactive Protocol
+Before generating the agent template, the system must enter a step-by-step questioning process to adaptively refine the domain persona. Ask the user clarifying questions adapted to the requested domain:
 *   What is the specific scope and boundary of expertise?
 *   What are the target platforms or environments?
 *   Are there specific performance versus safety priorities?
@@ -84,7 +84,7 @@ Once the interactive questions are answered, generate the Specialised Agent file
 *   [Expected tool or ecosystem 1]
 *   [Expected tool or ecosystem 2]
 
-## Review Guidelines
+## Review Guidance
 *   [Review criteria 1]
 *   [Review criteria 2]
 
