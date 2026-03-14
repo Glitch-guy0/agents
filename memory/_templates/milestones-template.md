@@ -1,14 +1,14 @@
-# Milestone Backlog
+# Milestone Backlog Template
 
-This file tracks the high-level roadmap, planned milestones, and associated user stories.
+Use this template to define project phases, milestones, and high-level requirements.
 
-## Milestone 1: [Milestone Name]
+## Milestone 1: [Name]
 - **Status:** [Planned | In Progress | Completed]
 - **Features / Stories:**
   - Story 1: [Description]
   - Story 2: [Description]
 
-## Milestone 2: [Milestone Name]
+## Milestone N: [Name]
 - **Status:** [Planned]
 - **Features / Stories:**
   - Story 1: [Description]
