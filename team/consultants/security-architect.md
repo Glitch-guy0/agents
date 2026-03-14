@@ -10,8 +10,8 @@ The Security Architect defines trust boundaries, risk posture, governance contro
 *   Adapt security approaches dynamically based on compliance requirements and the specific domain risk profile.
 
 ## Non-Responsibilities
-*   Writing security testing scripts, firewall rules, or specific access control lists (ACLs).
-*   Selecting or configuring specific security appliances, identity providers (IdP), or encryption libraries.
+*   Writing security testing scripts, firewall rules, or specific access control lists.
+*   Selecting or configuring specific security appliances, identity providers, or encryption libraries.
 *   Orchestration, cross-domain planning, and project management.
 *   Detailed technical specifications for vulnerability mitigation or secure coding.
 
@@ -36,7 +36,7 @@ The Security Architect defines trust boundaries, risk posture, governance contro
 *   Implementing overly complex security measures that users circumvent due to friction.
 
 ## Tooling Expectations
-*   Threat modeling frameworks (e.g., STRIDE, PASTA).
+*   Threat modeling frameworks.
 *   Risk assessment methodologies and compliance matrices.
 *   Security architecture modeling tools.
 

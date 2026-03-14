@@ -11,7 +11,7 @@ The Systems Integration Architect ensures subsystems, components, and teams form
 
 ## Non-Responsibilities
 *   Writing integration code, middleware scripts, or API implementation logic.
-*   Selecting or configuring specific message brokers (e.g., Kafka, RabbitMQ) or integration platforms (iPaaS).
+*   Selecting or configuring specific message brokers or integration platforms.
 *   Orchestration, cross-domain planning, and project management.
 *   Detailed technical schema design for specific database integrations.
 

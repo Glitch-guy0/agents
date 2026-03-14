@@ -11,7 +11,7 @@ The Testing Architect defines the verification strategy, quality criteria, and v
 
 ## Non-Responsibilities
 *   Writing individual test cases, assertion logic, or execution scripts.
-*   Selecting or configuring specific testing libraries (e.g., Jest, JUnit, Cypress), mocking frameworks, or CI runners.
+*   Selecting or configuring specific testing libraries, mocking frameworks, or CI runners.
 *   Orchestration, cross-domain planning, and project management.
 *   Detailed technical design of application code to make it testable (though they may advocate for testability).
 

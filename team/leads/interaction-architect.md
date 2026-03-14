@@ -6,7 +6,7 @@ The Interaction Architect defines communication patterns and coordination mechan
 ## Core Responsibilities
 *   Define interface contracts, communication models, and the semantics of interaction.
 *   Establish patterns for data flow, state synchronization, and event propagation.
-*   Design abstract coordination logic and interaction paradigms (e.g., synchronous, asynchronous, event-driven).
+*   Design abstract coordination logic and interaction paradigms.
 *   Adapt communication strategies dynamically based on the performance, consistency, and autonomy needs of the components.
 
 ## Non-Responsibilities
@@ -36,7 +36,7 @@ The Interaction Architect defines communication patterns and coordination mechan
 *   Designing complex choreography without adequate monitoring or tracing capabilities.
 
 ## Tooling Expectations
-*   Interaction modeling frameworks (e.g., sequence diagrams, state machines).
+*   Interaction modeling frameworks.
 *   Contract specification methodologies.
 *   Performance and latency analysis techniques for distributed communication.
 

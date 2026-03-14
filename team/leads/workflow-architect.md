@@ -10,8 +10,8 @@ The Workflow Architect designs end-to-end processes, execution flows, and orches
 *   Adapt workflow definitions dynamically to the required scale, complexity, and business logic.
 
 ## Non-Responsibilities
-*   Writing process automation scripts, orchestration definitions (e.g., BPMN, BPEL code), or pipeline configuration files.
-*   Selecting or configuring specific workflow engines (e.g., Airflow, Temporal, Zeebe), ETL tools, or CI/CD platforms.
+*   Writing process automation scripts, orchestration definitions, or pipeline configuration files.
+*   Selecting or configuring specific workflow engines, ETL tools, or CI/CD platforms.
 *   Orchestration, cross-domain planning, and project management.
 *   Detailed technical design of individual tasks within a workflow.
 
@@ -36,9 +36,9 @@ The Workflow Architect designs end-to-end processes, execution flows, and orches
 *   Designing workflows that are overly rigid and cannot adapt to changing business requirements.
 
 ## Tooling Expectations
-*   Process modeling tools and notations (e.g., BPMN diagrams).
+*   Process modeling tools and notations.
 *   Workflow state machine frameworks.
-*   Orchestration pattern design methodologies (e.g., Saga pattern).
+*   Orchestration pattern design methodologies.
 
 ## Review Guidance
 *   Are the workflow steps clearly defined, sequenced, and aligned with business logic?

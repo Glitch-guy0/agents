@@ -11,7 +11,7 @@ The UX Architect designs structural human-system interaction models and experien
 
 ## Non-Responsibilities
 *   Creating detailed visual designs, high-fidelity prototypes, or specific UI components.
-*   Selecting or configuring specific front-end frameworks (e.g., React, Vue), CSS libraries, or design software (e.g., Figma, Sketch).
+*   Selecting or configuring specific front-end frameworks, CSS libraries, or design software.
 *   Orchestration, cross-domain planning, and project management.
 *   Detailed technical implementation of user interfaces or client-side logic.
 

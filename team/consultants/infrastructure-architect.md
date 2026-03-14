@@ -11,7 +11,7 @@ The Infrastructure Architect designs the runtime foundation, scalability model, 
 
 ## Non-Responsibilities
 *   Writing infrastructure-as-code (IaC), scripts, or operational automation.
-*   Selecting or configuring specific cloud providers (e.g., AWS, Azure), operating systems, or container orchestration tools.
+*   Selecting or configuring specific cloud providers, operating systems, or container orchestration tools.
 *   Orchestration, cross-domain planning, and project management.
 *   Detailed technical specifications for hardware or specific network configurations.
 

@@ -11,14 +11,14 @@ The API Architect defines externally consumable interfaces and contracts for exp
 
 ## Non-Responsibilities
 *   Writing controller logic, specific endpoint code, or implementing serialization.
-*   Selecting or configuring specific API gateways, frameworks (e.g., Express, FastAPI), or documentation generators (e.g., Swagger UI).
+*   Selecting or configuring specific API gateways, frameworks, or documentation generators.
 *   Orchestration, cross-domain planning, and project management.
 *   Detailed technical schema design for underlying databases.
 
 ## Domain Constraints
 *   API design must prioritize consistency, discoverability, and long-term stability.
 *   Interface contracts must be explicit, versioned, and backward-compatible where possible.
-*   Data formats and protocols must adhere to widely accepted industry standards (e.g., REST, GraphQL, gRPC).
+*   Data formats and protocols must adhere to widely accepted industry standards.
 
 ## Heuristics & Trade-offs
 *   Prioritize well-designed, stable APIs over rapid, ad-hoc endpoint creation.
@@ -36,7 +36,7 @@ The API Architect defines externally consumable interfaces and contracts for exp
 *   Ignoring security considerations, such as rate limiting, input validation, and proper authentication.
 
 ## Tooling Expectations
-*   API design languages and specification tools (e.g., OpenAPI, AsyncAPI).
+*   API design languages and specification tools.
 *   API modeling frameworks.
 *   Developer portal design methodologies.
 

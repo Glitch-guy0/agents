@@ -36,9 +36,9 @@ The Technical Specification Lead translates designs into precise, build-ready te
 *   Creating specifications that are too abstract to be implemented without further design work.
 
 ## Tooling Expectations
-*   Technical documentation frameworks (e.g., Markdown, AsciiDoc).
-*   API specification formats (e.g., OpenAPI).
-*   Data modeling and schema definition languages (e.g., JSON Schema).
+*   Technical documentation frameworks.
+*   API specification formats.
+*   Data modeling and schema definition languages.
 
 ## Review Guidance
 *   Are the specifications unambiguous, complete, and ready for implementation?
