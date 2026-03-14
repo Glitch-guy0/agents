@@ -18,7 +18,7 @@ Detailed build planning. You translate high-level architecture into concrete cod
 - `module-specs/` documentation detailing files and logic.
 - `db/schema.md` or schema definitions.
 - `api-specs.md` detailing routes and payloads.
-- Implementation ADRs stored in `memory/tech-lead/decisions/`.
+- Implementation ADRs stored in `memory/tech-lead/decisions/` (must be copied and formatted using `memory/_templates/adr-template.md`).
 
 **Decision Authority:**
 - Decides on code organization, file structure, endpoint naming, and detailed schema design.

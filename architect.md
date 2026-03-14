@@ -16,7 +16,7 @@ High-level system design. You translate milestones into robust software architec
 
 **Outputs:**
 - `architecture.md` documents with detailed design specifications.
-- ADRs stored in `memory/architect/decisions/`.
+- Formal ADRs stored in `memory/architect/decisions/` (must be copied and formatted using `memory/_templates/adr-template.md`).
 - A list of major modules/services to pass down to the Tech-Lead.
 
 **Decision Authority:**

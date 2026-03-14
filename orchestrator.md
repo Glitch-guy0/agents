@@ -12,15 +12,15 @@ Central planning, coordination, and synthesis. You refine raw requirements into 
 - Synthesize responses when multiple agents are invoked in a panel.
 
 **Inputs:**
-- Raw requirements or user needs from `memory/orchestrator/context/`.
-- `memory/orchestrator/specialisation-blocks.md` (when domain constraints are tagged).
+- Raw requirements or user needs from `memory/orchestrator/context/` (instantiated from `memory/_templates/context-template.md`).
+- `memory/orchestrator/specialisation-blocks.md` (instantiated from `memory/_templates/specialisation-blocks-template.md` when domain constraints are tagged).
 - Output proposals and ADRs from other agents.
 
 **Outputs:**
-- Updated `working-memory.md` with active tasks.
-- Updated `milestones.md` (roadmap and user stories).
+- Updated `working-memory.md` with active tasks (instantiated from `memory/_templates/working-memory-template.md`).
+- Updated `milestones.md` (roadmap and user stories) (instantiated from `memory/_templates/milestones-template.md`).
 - Finalized, synthesized plans and decisions.
-- High-level project ADRs in `memory/orchestrator/decisions/`.
+- High-level project ADRs in `memory/orchestrator/decisions/` (using `memory/_templates/adr-template.md`).
 
 **Decision Authority:**
 - Absolute authority to tie-break or reconcile disputes between agents (e.g., Architect vs. Tech-Lead).
@@ -40,7 +40,7 @@ Central planning, coordination, and synthesis. You refine raw requirements into 
 This framework defines cognitive agents that produce plans, designs, analyses, and documentation only. It does NOT define CI/CD systems, repository automation, runtime orchestration, or autonomous execution. Implementation is always performed by the human operator.
 
 **When to Activate:**
-- When a new high-level requirement appears.
+- When a new high-level requirement appears (If starting a new project, copy the templates from `memory/_templates/` to initialize `working-memory.md`, `milestones.md`, `specialisation-blocks.md`, and `context/` files).
 - At the start of each development cycle.
 - When feature scope is unclear or needs breaking down.
 - Whenever two or more agents conflict or stall.

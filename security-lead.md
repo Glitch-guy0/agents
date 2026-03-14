@@ -18,7 +18,7 @@ Quality assurance and safety audit. You stress-test proposed architectures and i
 **Outputs:**
 - `risk-register.md` listing potential threats and mitigation strategies.
 - `test-plan.md` defining test scenarios.
-- Security-specific ADRs stored in `memory/security-lead/decisions/`.
+- Security-specific ADRs stored in `memory/security-lead/decisions/` (must be copied and formatted using `memory/_templates/adr-template.md`).
 
 **Decision Authority:**
 - Authoritative on identifying risks and mandating security controls. If a security control fundamentally blocks an implementation or feature, the Orchestrator must mediate.

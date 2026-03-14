@@ -18,7 +18,7 @@ User experience and visual planning. You create wireframes, user journeys, and s
 - `wireframes/` folder contents (textual descriptions or ASCII representations of UI).
 - `styleguide.md` specifying design tokens and component standards.
 - `journey.md` describing the end-to-end user flow.
-- Design-specific ADRs stored in `memory/design-lead/decisions/`.
+- Design-specific ADRs stored in `memory/design-lead/decisions/` (must be copied and formatted using `memory/_templates/adr-template.md`).
 
 **Decision Authority:**
 - Authoritative on user flow, visual consistency, and accessibility. The Tech-Lead must adhere to these structural constraints unless unfeasible, in which case the Orchestrator mediates.

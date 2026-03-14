@@ -16,7 +16,7 @@ Knowledge preservation and dissemination. You consolidate all agent outputs into
 
 **Outputs:**
 - Updated documentation in the `docs/` folder or root directories.
-- Formatted ADR files stored in `memory/technical-writer/decisions/` and other agent decision folders.
+- Formatted ADR files stored in `memory/technical-writer/decisions/` (using `memory/_templates/adr-template.md`) and other agent decision folders.
 - Synthesized overviews for the human operator to read.
 
 **Decision Authority:**

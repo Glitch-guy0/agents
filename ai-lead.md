@@ -17,7 +17,7 @@ Intelligent feature planning. You determine the feasibility, approach, and neces
 **Outputs:**
 - `ai-plan.md` defining the chosen approach, required datasets, and evaluation methodology.
 - Pipeline outlines detailing how data should flow from raw storage into the model.
-- AI-specific ADRs stored in `memory/ai-lead/decisions/`.
+- AI-specific ADRs stored in `memory/ai-lead/decisions/` (must be copied and formatted using `memory/_templates/adr-template.md`).
 
 **Decision Authority:**
 - Authoritative on model selection, data preprocessing techniques, and evaluation criteria.
