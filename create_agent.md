@@ -9,6 +9,23 @@ The system operates strictly in Mode A (Proposal-Only Workflow).
 *   **Specialised Agents** are deep domain experts. They act as advisory lenses, providing context, defining constraints, identifying risks, and serving as review authorities for their specific domain.
 *   Specialised Agents **do not** write production code, modify project files (except their own outputs), act autonomously, or override orchestration. Core agents perform reasoning; Specialised agents provide domain truth.
 
+## Specialisation Context Tracking
+
+To maintain traceability, future reinterpretation, conflict resolution, context integrity, and multi-domain reasoning safety, the framework must track which domain specialisations influenced stored memory.
+
+* Only core agents persist memory.
+* Specialised agents do NOT store memory; they provide constraints only.
+* When memory is saved, active specialisations must be recorded.
+* Multiple domains may be listed.
+* Absence of specialisations must be explicit (use "none").
+* Core agents remain responsible for recording how those constraints affected decisions.
+
+Stored entries should include fields such as:
+* Active Specialisations: [list]
+* Influence Scope: (optional short description)
+* Timestamp (optional)
+* Source Agent (core agent name)
+
 ## Invocation Pattern
 To generate a new Specialised Agent, a user or core agent invokes this file with a domain request:
 `@create_agent.md Create an agent specialized in [Domain].`
