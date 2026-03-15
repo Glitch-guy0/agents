@@ -18,6 +18,15 @@ This system is built entirely on the philosophy of **planning, not automation**,
 
 ## 2. Core Concept: Your Virtual Technical Organization
 
+```mermaid
+graph TD
+    User[You / The User] -->|Directs & Approves| Core[Core Agents]
+    User -->|Implements| Code[Codebase]
+    Core -->|Proposes Strategy| User
+    Core -->|Consults| Spec[Specialised Agents]
+    Spec -->|Provides Deep Context| Core
+```
+
 Think of this framework as your personal, on-demand engineering department.
 
 *   **Core Agents** act as your leadership team. They are the general thinkers, architects, and leads who guide the overall strategy of the project.
@@ -29,6 +38,24 @@ The agents in this framework **do not write or execute code in your repository**
 ---
 
 ## 3. Agent Hierarchy
+
+```mermaid
+graph TD
+    Framework[Cognitive Planning Framework] --> Core[Core Agents]
+    Framework --> Spec[Specialised Agents]
+
+    Core --> Orch[Orchestrator]
+    Core --> Arch[Architect]
+    Core --> Tech[Tech Lead]
+    Core --> Sec[Security Lead]
+    Core --> Write[Technical Writer]
+    Core --> Des[Design Lead]
+    Core --> AI[AI Lead]
+
+    Spec --> Cons[Consultants<br>High-level strategy]
+    Spec --> Leads[Leads<br>Mid-level design]
+    Spec --> Devs[Developers<br>Low-level details]
+```
 
 The framework organizes agents into two primary categories based on their role and authority level.
 
@@ -57,6 +84,23 @@ They are organized by classification level:
 
 ## 4. How Core Agents and Specialised Agents Work Together
 
+```mermaid
+sequenceDiagram
+    participant User
+    participant Orchestrator
+    participant CoreAgents as Core Agents
+    participant SpecAgents as Specialised Agents
+
+    User->>Orchestrator: Propose requirement/idea
+    Orchestrator->>User: Outline milestones
+    User->>CoreAgents: Request detailed plan
+    CoreAgents->>User: Draft implementation plan
+    User->>SpecAgents: Consult on specific domain
+    SpecAgents->>User: Provide domain constraints
+    User->>User: Approve final plan
+    User->>User: Implement code
+```
+
 The true power of the framework comes from collaboration:
 
 1.  **Core agents reason broadly** about the project's overall needs.
@@ -78,6 +122,14 @@ The true power of the framework comes from collaboration:
 
 ## 5. Getting Started (Quick Start)
 
+```mermaid
+flowchart LR
+    A[Describe Idea] --> B[Invoke Core Agent]
+    B --> C[Start Planning]
+    C --> D[Refine with Experts]
+    D --> E[Finalize & Implement]
+```
+
 This framework has **no technical prerequisites**. You do not need API keys, installations, or specialized software. It is a collection of structured agent instructions designed to be used within any LLM chat interface (like ChatGPT, Claude, etc.) that supports long-form prompt context.
 
 **Step-by-Step:**
@@ -93,6 +145,17 @@ This framework has **no technical prerequisites**. You do not need API keys, ins
 
 ## 6. Typical Workflow (End-to-End)
 
+```mermaid
+flowchart TD
+    Idea[1. Idea Generation] --> Miles[2. Milestone Definition]
+    Miles --> Plan[3. Detailed Planning]
+    Plan --> Rev[4. Specialist Review]
+    Rev --> App[5. Human Approval]
+    App --> Imp[6. Manual Implementation]
+    Imp --> Feed[7. Feedback & Iteration]
+    Feed -->|Next Milestone or Fix| Miles
+```
+
 The intended development loop follows a specific sequence:
 
 1.  **Idea Generation:** You propose a rough concept or feature.
@@ -106,6 +169,13 @@ The intended development loop follows a specific sequence:
 ---
 
 ## 7. How to Invoke Agents
+
+```mermaid
+graph TD
+    Invoke[Agent Invocation] --> Single[Single Agent]
+    Invoke --> Multi[Multi-Agent Panel]
+    Invoke --> Combo[Combined Core + Specialised]
+```
 
 Agents are invoked conversationally. You "adopt their perspective" by including their markdown file contents in your prompt or attaching the file to the context.
 
@@ -136,6 +206,15 @@ Specialised Agents are expert lenses you apply to a problem. Use them when you n
 
 ### Team Capability Assessment
 
+```mermaid
+flowchart TD
+    Req[Analyze Requirements] --> Check{Expertise Sufficient?}
+    Check -->|Yes| Plan[Continue Planning]
+    Check -->|No| Identify[Identify Missing Specialists]
+    Identify --> Rec[Recommend Agents]
+    Rec --> Details[Explain: Why, Risks, Impact, Priority]
+```
+
 The Orchestrator can analyze your requirements and determine whether your current team of Specialised Agents provides sufficient expertise.
 
 It inspects the `/team/` directory and produces a capability report:
@@ -155,6 +234,12 @@ These recommendations are advisory only. You may proceed without creating new ag
 ---
 
 ## 9. How Specialised Agents Evolve During a Project
+
+```mermaid
+flowchart LR
+    Gen[Generic Domain Agent] -->|User provides Context| Spec[Narrowed Focus]
+    Spec -->|Project Evolves| Adapt[New Constraints Provided]
+```
 
 Specialised Agents are dynamic. Because they do not execute code or alter files, their value comes from how they adapt to your ongoing conversation.
 
@@ -211,6 +296,16 @@ To ensure a smooth experience, it is critical to understand the boundaries of th
 ---
 
 ## 14. Example End-to-End Scenario
+
+```mermaid
+flowchart TD
+    Req[Vague Requirement] --> Core[Invoke Core Agents]
+    Core --> Draft[Draft Plan]
+    Draft --> Spec[Invoke Specialised Agent]
+    Spec --> Refine[Refine Plan]
+    Refine --> App[User Approves Plan]
+    App --> Imp[Manual Implementation]
+```
 
 **1. The Vague Requirement:**
 You want to build a feature that lets users upload profile pictures.
