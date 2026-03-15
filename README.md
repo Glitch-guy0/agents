@@ -63,6 +63,8 @@ The true power of the framework comes from collaboration:
 2.  **Specialised agents constrain the domain**, providing specific guardrails and expert insights when complex technical challenges arise.
 3.  **Multiple agents can be active simultaneously** in a single conversation.
 4.  **The Orchestrator (if used) synthesizes** the various outputs into a cohesive plan.
+5.  **The Orchestrator can assess team capability.**
+    Based on requirements, it may recommend additional specialised agents that should be consulted. These recommendations are advisory and help identify missing expertise before detailed planning continues.
 
 **Example Interaction Model:**
 *   *You* ask the Orchestrator to plan a new user authentication feature.
@@ -132,6 +134,24 @@ Specialised Agents are expert lenses you apply to a problem. Use them when you n
 *   **How to choose:** Pick the classification level that matches your need. Need high-level strategy? Use a Consultant. Need practical guidance? Use a Developer.
 *   **Context Adaptive:** You don't need a "React Developer" agent and a "Vue Developer" agent. You load the generic `frontend-developer.md` and tell it your project uses React. The agent will adapt its expertise automatically.
 
+### Team Capability Assessment
+
+The Orchestrator can analyze your requirements and determine whether your current team of Specialised Agents provides sufficient expertise.
+
+It inspects the `/team/` directory and produces a capability report:
+
+*   **Available Specialists:** Agents already present that match the required domains.
+*   **Required Specialists:** Missing expertise that may be important for safety, quality, or feasibility.
+
+For each required specialist, the Orchestrator explains:
+
+*   Why the expertise is needed
+*   Risks of proceeding without it
+*   What decisions the specialist would influence
+*   Priority level (Critical / Important / Optional)
+
+These recommendations are advisory only. You may proceed without creating new agents, but doing so may increase project risk.
+
 ---
 
 ## 9. How Specialised Agents Evolve During a Project
@@ -141,6 +161,8 @@ Specialised Agents are dynamic. Because they do not execute code or alter files,
 *   As you provide more context (e.g., "We decided to use PostgreSQL"), the agents automatically narrow their focus and provide more relevant constraints.
 *   They provide different perspectives as your project evolves from early architecture to detailed implementation.
 *   You **do not** need to create new agent files every time your technology stack changes or your domain shifts. The existing agents adapt to the context you provide.
+
+As new requirements are introduced or the project enters new domains, the Orchestrator may recommend additional specialists to address emerging risks or knowledge gaps. This allows the virtual organization to grow organically with the complexity of the project.
 
 ---
 
@@ -154,6 +176,8 @@ Use the `create_agent.md` template (if provided in your repository) to generate 
 *   **Location:** Place new agents in the correct `/team/` subdirectory (`consultants/`, `leads/`, or `developers/`) based on their authority level.
 *   **Project-Agnostic:** Do not hardcode your specific project details into the agent file. Keep them broadly applicable.
 *   **Advisory Only:** Ensure the agent's instructions explicitly state they produce proposals and constraints, not implementation code.
+
+You do not need to create new agents preemptively. In most cases, it is best to allow the Orchestrator to identify missing expertise based on actual requirements and recommend the appropriate domain specialists.
 
 ---
 
