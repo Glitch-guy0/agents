@@ -1,0 +1,26 @@
+{
+  "skill_name": "project-planner",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to build a simple habit tracker app for my kids. They each have their own chore list, and they earn points when they complete chores. At the end of the week they can trade points for prizes from a prize catalog. Can you help me plan this out?",
+      "expected_output": "Creates a plan folder with milestones, technical docs, and implementation tasks for a kids chore/points system",
+      "files": [],
+      "eval_name": "new-habit-tracker-app"
+    },
+    {
+      "id": 1,
+      "prompt": "resume my project plan",
+      "expected_output": "Detects existing plan folder and offers to continue or start fresh",
+      "files": [],
+      "eval_name": "resume-existing-plan"
+    },
+    {
+      "id": 2,
+      "prompt": "we need a new internal tool for our support team to manage customer tickets. It's basically a helpdesk system with ticket assignment, priorities, and status tracking",
+      "expected_output": "Creates plan with milestones for helpdesk features, possibly identifies gaps that need interviewing",
+      "files": [],
+      "eval_name": "helpdesk-tool-plan"
+    }
+  ]
+}
